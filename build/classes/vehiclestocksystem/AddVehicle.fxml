@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="649.0" prefWidth="755.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vehiclestocksystem.AddVehicleController">
+   <children>
+      <Text layoutX="6.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vehicle Dealership Stock Management System">
+         <font>
+            <Font name="Book Antiqua" size="36.0" />
+         </font>
+      </Text>
+      <Text layoutX="297.0" layoutY="73.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Vehicle">
+         <font>
+            <Font name="Book Antiqua" size="28.0" />
+         </font>
+      </Text>
+      <TextField fx:id="regNo" layoutX="144.0" layoutY="199.0" promptText="Enter Reg Number" />
+      <TextField fx:id="make" layoutX="144.0" layoutY="274.0" promptText="Enter Make" />
+      <TextField fx:id="mileage" layoutX="144.0" layoutY="431.0" promptText="Enter Mileage" />
+      <TextField fx:id="model" layoutX="144.0" layoutY="351.0" promptText="Enter Model" />
+      <TextField fx:id="price" layoutX="454.0" layoutY="506.0" promptText="Enter Price" />
+      <Label layoutX="341.0" layoutY="111.0" text="Vehicle Type" />
+      <Label layoutX="454.0" layoutY="488.0" text="Purchase Price" />
+      <Label layoutX="454.0" layoutY="413.0" text="Engine Size" />
+      <Label layoutX="454.0" layoutY="333.0" text="No. of Seats" />
+      <Label layoutX="453.0" layoutY="257.0" text="No. of Doors" />
+      <Label layoutX="144.0" layoutY="487.0" text="Fuel Type" />
+      <Label layoutX="144.0" layoutY="412.0" text="Mileage" />
+      <Label layoutX="144.0" layoutY="333.0" text="Model" />
+      <Label layoutX="144.0" layoutY="257.0" text="Make" />
+      <Label layoutX="144.0" layoutY="180.0" text="Registration No." />
+      <ChoiceBox fx:id="vehType" layoutX="303.0" layoutY="129.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="noOfDoors" layoutX="453.0" layoutY="274.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="noOfSeats" layoutX="453.0" layoutY="351.0" prefWidth="150.0" />
+      <Button layoutX="296.0" layoutY="590.0" mnemonicParsing="false" onAction="#changeToHomeConfirm" text="Confirm" />
+      <Button layoutX="400.0" layoutY="590.0" mnemonicParsing="false" onAction="#changeToHomeCancel" text="Cancel" />
+      <TextField fx:id="engineSize" layoutX="454.0" layoutY="431.0" promptText="Enter Engine Size" />
+      <Label layoutX="455.0" layoutY="181.0" text="Transmisson" />
+      <ChoiceBox fx:id="transmission" layoutX="454.0" layoutY="199.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="fuelType" layoutX="144.0" layoutY="506.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
